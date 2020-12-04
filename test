@@ -1,0 +1,17 @@
+curl -X POST localhost:5000/v1/points/homer -d '{"point": {"company": "DANNON", "value": 300, "date": "10/31/2020 10:00:00"}}' -H 'Content-Type: application/json'
+printf "\n\n"
+curl -X POST localhost:5000/v1/points/homer -d '{"point": {"company": "UNILEVER", "value": 200, "date": "10/31/2020 11:00:00"}}' -H 'Content-Type: application/json'
+printf "\n\n"
+curl -X POST localhost:5000/v1/points/homer -d '{"point": {"company": "DANNON", "value": -200, "date": "10/31/2020 15:00:00"}}' -H 'Content-Type: application/json'
+printf "\n\n"
+curl -X POST localhost:5000/v1/points/homer -d '{"point": {"company": "MILLER COORS", "value": 10000, "date": "11/01/2020 14:00:00"}}' -H 'Content-Type: application/json'
+printf "\n\n"
+curl -X POST localhost:5000/v1/points/homer -d '{"point": {"company": "DANNON", "value": 1000, "date": "11/02/2020 14:00:00"}}' -H 'Content-Type: application/json'
+printf "\n\n"
+printf "DEDUCTIONS:\n"
+curl -X POST localhost:5000/v1/points/homer -d '{"value": -5000}' -H 'Content-Type: application/json'
+printf "\n\n"
+printf "OVERVIEW:\n"
+curl -X GET localhost:5000/v1/points/homer
+printf "\n\n"
+
