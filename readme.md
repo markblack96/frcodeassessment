@@ -2,7 +2,7 @@
 
 If Python 3.7+ along with Pip are not installed on your machine, please install them.
 
-If you wish to use a virtual environment, navigate via terminal to the cloned directory and issue the following command into the terminal to create a virtual environment named venv:
+If you wish to use a virtual environment, assuming you have `virtualenv` installed, navigate via terminal to the cloned directory and issue the following command into the terminal to create a virtual environment named venv:
 `virtualenv venv`
 
 Issue `source venv/bin/activate` to activate the virtual environment. 
